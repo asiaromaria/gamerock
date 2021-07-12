@@ -8,7 +8,7 @@ class Human extends Player{
     }
 
     chosenGesture(){
-        console.log(`Hello ${this.userName}... choose your weapon for battle. Rock, Paper, Scissors, Lizard, or Spock? `);
+        console.log(`Hello ${this.userName}... choose your weapon for battle. Rock, Paper, Scissors, Lizard, or Spock? `)
         this.choice = prompt();
         switch (this.choice) {
             case "Rock":
@@ -37,4 +37,4 @@ class Human extends Player{
 
 }
 
-module.exports = player;
+module.exports = human;
