@@ -1,3 +1,3 @@
 const Game = require('./Game');
-const newGame = new Game;
+let game1 = new Game();
 newGame.mainMenu();

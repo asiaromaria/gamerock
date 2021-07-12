@@ -8,4 +8,4 @@ class Player{
 
 }
 
-module.exports = user;
+module.exports = player;

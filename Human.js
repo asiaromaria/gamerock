@@ -4,26 +4,26 @@ const prompt = require("prompt-sync");
 class Human extends Player{
     constructor(){
         super();
-        this.userName = prompt("Please enter in your name. ");
+        this.name = prompt("Please enter in your name. ");
     }
 
     chosenGesture(){
-        console.log(`Hello ${this.userName}... choose your weapon for battle. Rock, Paper, Scissors, Lizard, or Spock? `)
+        console.log(`Hello ${this.name}... choose your weapon for battle. '1' for Rock\n '2' for Paper\n '3' for Scissors\n '4' for Lizard\n '5' for Spock? `)
         this.choice = prompt();
         switch (this.choice) {
-            case "Rock":
+            case "1":
                 this.choice = this.handgame [0];
                 break;
-            case "Paper":
+            case "2":
                 this.choice = this.handgame [1];
                 break;
-            case "Scissors":
+            case "3":
                 this.choice = this.handgame [2]; 
                 break;
-            case "Lizard":
+            case "4":
                 this.choice = this.handgame [3];
                 break;
-            case "Spock":
+            case "5":
                 this.choice = this.handgame [4];
                 break;
             default:    
@@ -31,7 +31,7 @@ class Human extends Player{
                 this.chosenGesture();
                 break;
         }
-        console.log(`${this.choice}! I choose you!!`);
+        console.log(`${this.choice} my little friend! I choose you!!`);
     }
     
 
