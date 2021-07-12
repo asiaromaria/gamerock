@@ -1,9 +1,11 @@
-const Player = require('./Player');
+const Player = require("./Player");
 const Human = require('./Human');
 const prompt = require('prompt-sync')()
 const AI = require('./AI')
 const chalk = require('chalk');
 
+
+beginBattle() 
 class Game{
     constructor(){
         this.playerOne;
@@ -29,5 +31,31 @@ class Game{
         }
     
     }
-
 }
+
+    let chosenGesture = prompt()
+        this.weapon
+        if(chosenGesture == '1'){
+            weapon = this.handGame.push[0]
+            return weapon;
+        }
+        else if(chosenGesture == '2'){
+            weapon = this.handGame.push[1]
+            return weapon;
+        }
+        else if(chosenGesture == '3'){
+            weapon = this.handGame.push[2]
+            return weapon;
+        }
+        else if(chosenGesture == '4'){
+            weapon = this.handGame.push[3]
+            return weapon;
+        }
+        else if(chosenGesture == '5'){
+            weapon = this.handGame.push[4]
+            return weapon;
+            }
+    
+
+
+module.exports = game;
